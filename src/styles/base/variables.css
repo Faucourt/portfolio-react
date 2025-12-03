@@ -1,0 +1,71 @@
+/* VARIABLES – THEME & DESIGN SYSTEM
+   Palette, typographies, espacements*/
+
+:root {
+  /* --- Couleurs principales --- */
+  --color-primary: #18534f; /* Identité principale */
+  --color-secondary: #226d68; /* Accent foncé */
+  --color-light: #ecf8f6; /* Fond clair */
+  --color-accent: #feeaa1; /* Surlignage */
+  --color-warm: #d6955b; /* Accent chaud */
+
+  /* --- Couleurs textuelles --- */
+  --text-primary: #18534f;
+  --text-secondary: #226d68;
+  --text-light: #ecf8f6;
+
+  /* --- Fonds globaux --- */
+  --bg-primary: #ecf8f6;
+  --bg-secondary: #feeaa1;
+
+  /* --- Bordures & ombres --- */
+  --border-color: rgba(0, 0, 0, 0.1);
+  --shadow-color: rgba(24, 83, 79, 0.15);
+
+  /* --- Typographies --- */
+  --font-main: "Poppins", sans-serif;
+  --font-alt: "Open Sans", sans-serif;
+
+  /* --- Layout & radius --- */
+  --radius: 8px;
+  --radius-large: 14px;
+  --container-width: 1100px;
+  --section-spacing: 4rem;
+
+  /* --- Transitions --- */
+  /* Pas de background-color ici pour éviter les artefacts ;
+     on garde ça pour les hover, etc. */
+  --transition: color 0.25s ease, border-color 0.25s ease,
+    box-shadow 0.25s ease, transform 0.25s ease;
+
+  /* --- Z-index (pour composants) --- */
+  --z-header: 1000;
+  --z-fixed: 20;
+  --z-popup: 30;
+  --z-overlay: 40;
+}
+
+/* DARK MODE – palette cohérente + contrastée */
+body.dark {
+  /* Fonds */
+  --bg-primary: #050f11; /* fond principal sombre bleu/vert */
+  --bg-secondary: #0d2326; /* blocs secondaires */
+
+  /* Couleurs principales et surfaces */
+  --color-primary: #e4f7f5; /* texte / éléments principaux */
+  --color-secondary: #a8e0da; /* accent froid lisible */
+  --color-light: #0f2527; /* surfaces (cards, header, footer) */
+
+  /* Texte */
+  --text-primary: #eaf7f5;
+  --text-secondary: #c2e7e2;
+  --text-light: #ecf8f6;
+
+  /* Accents */
+  --color-accent: #fbc96d; /* jaune chaud lisible */
+  --color-warm: #f28c52; /* accent chaud pour hover */
+
+  /* Bordures & ombres */
+  --border-color: rgba(255, 255, 255, 0.14);
+  --shadow-color: rgba(0, 0, 0, 0.7);
+}

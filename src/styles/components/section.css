@@ -1,0 +1,65 @@
+/* SECTIONS – Espaces verticaux & blocs*/
+
+/* Conteneur principal */
+section {
+  padding: var(--section-spacing) 1.5rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Variation claire */
+.section-light {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Variation accentuée */
+.section-accent {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+}
+
+/* Variation sombre */
+.section-dark {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+}
+
+/* Contenu centré */
+.section-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.section-content > * + * {
+  margin-top: 1rem;
+}
+
+/* Variante mince */
+.section-slim {
+  padding: 2rem 1.5rem;
+}
+
+/* Mobile-first */
+@media (max-width: 600px) {
+  section {
+    padding: 2.5rem 1.2rem;
+  }
+}
+
+/* ===== Dark mode – ajustements de fond ===== */
+
+body.dark .section-light {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+body.dark .section-accent {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+body.dark .section-dark {
+  background-color: #020809;
+  color: var(--text-primary);
+}

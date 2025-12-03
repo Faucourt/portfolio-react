@@ -1,0 +1,93 @@
+/* CARDS – Composants visuels réutilisables*/
+
+.card {
+  background-color: var(--color-light);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 8px var(--shadow-color);
+  padding: 1.5rem;
+  transition: var(--transition);
+}
+
+.card:hover,
+.card:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px var(--shadow-color);
+  outline: none;
+}
+
+/* Titres dans les cards */
+.card-title {
+  font-family: var(--font-main);
+  font-size: 1.4rem;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-family: var(--font-alt);
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+/* Mode sombre */
+body.dark .card {
+  background-color: var(--color-light);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+/* CARTES FLIP – (utilisé pour Parcours) */
+
+.card--flip {
+  perspective: 1000px;
+  cursor: pointer;
+  width: 260px;
+  height: 340px;
+}
+
+.card--flip .card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+
+.card--flip.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card--flip .card-front,
+.card--flip .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius);
+  backface-visibility: hidden;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Face avant */
+.card--flip .card-front {
+  background-color: var(--color-light);
+  color: var(--text-primary);
+}
+
+/* Face arrière */
+.card--flip .card-back {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 768px) {
+  .card--flip {
+    width: 100%;
+    max-width: 300px;
+  }
+}
