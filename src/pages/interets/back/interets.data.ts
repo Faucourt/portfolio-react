@@ -297,9 +297,9 @@ export const SPORTS: Sport[] = [
     title: "Design & Création",
     desc: "Compte professionnel Instagram de Design sur la thématique du Sport (DesignFlex&Sport). <br /><a href='https://www.instagram.com/designflexsport/' target='_blank' rel='noreferrer'>Lien du compte</a>",
     photos: [
-      "/images/interets/design-1.png",
-      "/images/interets/design-2.png",
-      "/images/interets/design-3.png",
+      "/images/interets/design-1.jpg",
+      "/images/interets/design-2.jpg",
+      "/images/interets/design-3.jpg",
     ],
   },
 ];
