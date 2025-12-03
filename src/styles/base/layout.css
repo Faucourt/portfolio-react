@@ -133,12 +133,7 @@ main {
   }
 }
 
-/* ================================
-   Transition douce Light <-> Dark
-   (activée seulement pendant 250ms
-    via body.theme-transition)
-   ================================ */
-
+/* TRANSITIONS DE THÈME */
 body.theme-transition,
 body.theme-transition .site-header,
 body.theme-transition .site-footer,

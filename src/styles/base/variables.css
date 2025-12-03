@@ -33,8 +33,6 @@
   --section-spacing: 4rem;
 
   /* --- Transitions --- */
-  /* Pas de background-color ici pour éviter les artefacts ;
-     on garde ça pour les hover, etc. */
   --transition: color 0.25s ease, border-color 0.25s ease,
     box-shadow 0.25s ease, transform 0.25s ease;
 

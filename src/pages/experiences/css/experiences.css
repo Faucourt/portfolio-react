@@ -90,21 +90,6 @@
   font-weight: 600;
 }
 
-.xp-context--stage {
-  background: var(--color-accent);
-  color: var(--bg-primary);
-}
-
-.xp-context--alternance {
-  background: var(--color-warm);
-  color: var(--bg-primary);
-}
-
-.xp-context--freelance {
-  background: var(--color-secondary);
-  color: var(--bg-primary);
-}
-
 .xp-context--default {
   background: var(--color-light);
   color: var(--color-primary);
@@ -138,8 +123,6 @@
   padding: 0.3rem 0.6rem;
   font-size: 0.8rem;
   border-radius: 999px;
-  background: var(--color-accent);
-  color: var(--bg-primary);
   border: 1px solid rgba(24, 83, 79, 0.25);
 }
 

@@ -17,7 +17,7 @@ export const PROJECTS: Project[] = [
     title: "Portfolio Web v2.0 (React + TypeScript)",
     year: "2025",
     state: "En cours de finalisation",
-    image: "/images/projets/portfolioReact.jpg",
+    image: "/images/projets/portfolioProject.jpg",
     alt: "Portfolio moderne développé en React et TypeScript",
     sections: {
       contexte: `
